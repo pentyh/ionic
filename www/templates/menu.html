@@ -1,0 +1,97 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+    <ion-side-menu-content>
+
+        <ion-header-bar align-title="center" class="bar-positive">
+
+            <div class="buttons">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"
+                        ng-click="doSomething()"></button>
+            </div>
+            <h1 class="title">asdf</h1>
+            <div class="buttons">
+                <button class="button button-icon button-clear ion-person" menu-toggle="right"
+                        ng-click="doSomething()"></button>
+            </div>
+        </ion-header-bar>
+
+        <ion-content>
+
+            <ion-header-bar class="bar-positive">
+                <input type="text" class=" item-input-wrapper" style="border-radius: 0">
+                <div class="buttons ">
+                    <button class="button button-icon button-clear ion-android-search" menu-toggle="right"
+                            ng-click="doSomething()"></button>
+                </div>
+            </ion-header-bar>
+
+            <ion-tabs class="tabs-positive">
+
+                <ion-tab title="뉴스" href="#/app/news">
+                    <ion-nav-view name="tab-news"></ion-nav-view>
+                </ion-tab>
+                <ion-tab title="기계장터" href="#/app/markerplace">
+                    <ion-nav-view name="tab-markerplace"></ion-nav-view>
+                </ion-tab>
+                <ion-tab title="구인구직">
+                    <ion-nav-view name="tab-job"></ion-nav-view>
+                </ion-tab>
+                <ion-tab title="업체검색">
+                    <ion-nav-view name="tab-enterprice"></ion-nav-view>
+                </ion-tab>
+                <ion-tab title="인재검색">
+                    <ion-nav-view name="tab-person"></ion-nav-view>
+                </ion-tab>
+            </ion-tabs>
+
+            <!--<ion-content has-header="true">-->
+
+                <!--<ion-nav-view>-->
+
+                    <!---->
+                <!--</ion-nav-view>-->
+
+            <!--</ion-content>-->
+        </ion-content>
+
+
+        <!--<ion-nav-bar class="bar-stable">-->
+        <!--<ion-nav-back-button>-->
+        <!--</ion-nav-back-button>-->
+
+        <!--<ion-nav-buttons side="left">-->
+        <!--<button class="button button-icon button-clear ion-navicon" menu-toggle="left">-->
+        <!--</button>-->
+        <!--</ion-nav-buttons>-->
+        <!--</ion-nav-bar>-->
+
+        <!--<ion-nav-view name="menuContent">-->
+
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+
+        <ion-header-bar class="bar-stable">
+            <h1 class="title">Left</h1>
+        </ion-header-bar>
+
+        <ion-content>
+            <ion-list>
+                <ion-item menu-close ng-click="login()">
+                    Login
+                </ion-item>
+                <ion-item menu-close href="#/app/search">
+                    Search
+                </ion-item>
+                <ion-item menu-close href="#/app/browse">
+                    Browse
+                </ion-item>
+                <ion-item menu-close href="#/app/playlists">
+                    Playlists
+                </ion-item>
+            </ion-list>
+        </ion-content>
+
+    </ion-side-menu>
+
+</ion-side-menus>
